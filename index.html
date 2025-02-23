@@ -14,29 +14,11 @@
             <p>Kami sedang bekerja untuk memberikan pengalaman yang lebih baik. Harap bersabar, kami akan segera kembali!</p>
             <div class="loader"></div>
             <p class="sub-text">Terima kasih atas kesabaran Anda.</p>
-            <div class="countdown">
-                <p id="countdown-text">Perkiraan selesai dalam: <span id="timer"></span></p>
-            </div>
-            <div class="contact-info">
-                <p>Hubungi kami: <a href="mailto:rfshacoderid@gmail.com">rfshacoderid@gmail.com</a></p>
-                <p>Ikuti kami di <a href="#">https://rafashaalfian.vercel.app/</a></p>
-            </div>
+            <div class="countdown"></div>
         </div>
+        <footer>
+            <p class="credit">© Rafasha Alfiandi</p>
+        </footer>
     </div>
-    <script>
-        function startCountdown(duration) {
-            let timer = duration, hours, minutes, seconds;
-            setInterval(function () {
-                hours = Math.floor(timer / 3600);
-                minutes = Math.floor((timer % 3600) / 60);
-                seconds = timer % 60;
-                document.getElementById('timer').textContent = `${hours}h ${minutes}m ${seconds}s`;
-                if (timer > 0) {
-                    timer--;
-                }
-            }, 1000);
-        }
-        startCountdown(86400); // 24 jam
-    </script>
 </body>
 </html>
