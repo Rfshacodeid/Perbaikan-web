@@ -7,7 +7,8 @@
 
 /* Gaya umum */
 body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: url('https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -17,23 +18,24 @@ body {
     text-align: center;
     padding: 20px;
     overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Kontainer utama */
 .container {
     max-width: 600px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
     animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Judul */
 h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,17 +43,19 @@ h1 {
 
 /* Paragraf */
 p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    opacity: 0.9;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    opacity: 1;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 /* Paragraf tambahan */
 .sub-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
-    opacity: 0.7;
+    opacity: 0.9;
+    font-weight: 500;
 }
 
 /* Loader animasi */
@@ -59,7 +63,7 @@ p {
     margin: 20px auto;
     width: 60px;
     height: 60px;
-    border: 6px solid rgba(255, 255, 255, 0.3);
+    border: 6px solid rgba(255, 255, 255, 0.5);
     border-top: 6px solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -68,27 +72,8 @@ p {
 /* Bagian countdown */
 .countdown {
     margin-top: 15px;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-/* Informasi kontak */
-.contact-info {
-    margin-top: 20px;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.contact-info a {
-    color: #00c3ff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #00ffff;
-    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 /* Animasi */
@@ -102,6 +87,14 @@ p {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.credit {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+
 /* Penyesuaian untuk tampilan lebih kecil */
 @media (max-width: 768px) {
     .container {
@@ -109,14 +102,14 @@ p {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .countdown {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
